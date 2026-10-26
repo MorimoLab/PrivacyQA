@@ -1,0 +1,64 @@
+# Python build and test artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv*/
+venv/
+env/
+
+# Credentials and local settings
+.env
+.env.*
+*credentials*
+*secret*
+*.pem
+*.key
+
+# Private runs, intermediate files and logs; keep them outside the repository
+work/
+runs/
+outputs/
+private/
+*.log
+*.pid
+*.sqlite
+*.sqlite-journal
+*.duckdb
+*.npz
+
+# Data that the source terms do not allow to redistribute (written by scripts/export_release.py --restricted-out)
+data/restricted/
+**/restricted/
+
+# Model weights and checkpoints
+checkpoints/
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+
+# Agent skills, instructions and notes that contain personal information
+.agents/
+.claude/
+.codex/
+.cursor/
+skills/
+AGENTS.md
+CLAUDE.md
+notes/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

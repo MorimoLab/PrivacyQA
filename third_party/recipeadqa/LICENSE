@@ -1,0 +1,43 @@
+RecipeADQA Licensing Notice
+
+Copyright 2026 RecipeADQA contributors
+
+This repository uses different licenses for software and research artifacts.
+
+1. Software source code
+
+Original software source code in `code/` and `experiments/`, including Python
+and shell scripts and software configuration files, is licensed under the
+Apache License, Version 2.0. The complete license text is provided in
+`LICENSES/Apache-2.0.txt`.
+
+2. Datasets and experimental results
+
+Original public datasets in `data/`, released prompt and template artifacts in
+`prompts/`, and aggregate experimental results in `experiments/**/results/`
+and released checkpoint artifacts in `checkpoints/` are licensed under the
+Creative Commons Attribution 4.0 International license (CC BY 4.0).
+Repository documentation is also licensed under CC BY 4.0 unless otherwise
+stated. The complete license text is provided in `LICENSES/CC-BY-4.0.txt`.
+
+When redistributing or adapting CC BY 4.0 material, provide appropriate credit
+to the RecipeADQA contributors, identify the material as RecipeADQA, link to
+the repository and CC BY 4.0 license, and indicate whether changes were made.
+
+3. Recipe1M exclusion
+
+Recipe1M is an externally licensed, restricted dataset and is not distributed
+in this repository. Recipe1M records and non-released record-level derivatives
+are not covered by either license above. No permission or rights in Recipe1M
+are granted by this repository. Users must obtain Recipe1M independently and
+comply with its applicable terms.
+
+4. Third-party material
+
+Third-party material is governed by its own license and attribution notice,
+not by the repository-level licenses above. The complete Apache License 2.0
+text applicable to the FoodKG-derived material is provided in
+`LICENSES/Apache-2.0.txt`. See `NOTICE.md`, the upstream model notices in
+`checkpoints/README.md`, and any license files located alongside third-party
+components. If a file contains a more specific license notice, that notice
+takes precedence for that file.

@@ -1,0 +1,398 @@
+{
+ "run_root": "<RUN_ROOT>",
+ "domains": {
+  "movie": {
+   "movies": "<MOVIELENS_32M>/movies.csv",
+   "links": "<MOVIELENS_32M>/links.csv",
+   "rules": "movie_rules.json",
+   "catalog": "<MOVIE_CATALOG>",
+   "schema": "../data/movie/catalog/schema.json",
+   "ratings": {
+    "path": "<MOVIELENS_32M>/ratings.csv",
+    "format": "csv",
+    "user": "userId",
+    "item": "movieId"
+   }
+  },
+  "beauty": {
+   "metadata": "<AMAZON_REVIEWS_2023>/meta_Beauty_and_Personal_Care.jsonl.gz",
+   "rules": "beauty_rules.json",
+   "catalog": "../data/beauty/catalog/catalog.parquet",
+   "schema": "../data/beauty/catalog/schema.json",
+   "ratings": {
+    "path": "<AMAZON_REVIEWS_2023>/Beauty_and_Personal_Care.csv.gz",
+    "format": "csv.gz",
+    "user": "user_id",
+    "item": "parent_asin"
+   }
+  },
+  "recipe_text": {
+   "sources": {
+    "answer_index": "<RECIPEADQA>/data/qa/v5_exact_answer_index/constraint_answer_index.sqlite",
+    "recipe_uris": "<RECIPEADQA>/data/foodkg/v5_tagcovered_core/recipe-uri-index.tsv",
+    "recipes": "<RECIPEADQA>/data/foodkg/recipe1m_v5_tagged_recipes.json",
+    "direction_schema": "<RECIPEADQA>/data/schema/aspect_direction_schema.tsv",
+    "tag_schema": "<RECIPEADQA>/data/schema/tag_direction_schema.tsv"
+   },
+   "rules": "recipe_rules.json",
+   "catalog": "<RECIPE_CATALOG>",
+   "schema": "../data/recipe/schema/schema.json",
+   "reviews": {
+    "path": "<FOOD_COM>/reviews.parquet",
+    "format": "parquet"
+   },
+   "judgments": [
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0001.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0002.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0003.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0004.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0005.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0006.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0007.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0008.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0009.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0010.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0011.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0012.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0013.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0014.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0015.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0016.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0017.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0018.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0019.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0020.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0021.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0022.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0023.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0024.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0025.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0026.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0027.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0028.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0029.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0030.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0031.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0032.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0033.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0034.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0035.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0036.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0037.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0038.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0039.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0040.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0041.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0042.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0043.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0044.tsv",
+     "format": "tsv"
+    },
+    {
+     "path": "<RECIPEADQA>/data/review/full_comment_predictions_and_tag_alignment/prediction_shards/manual_final_full_comment_recall_v1_deberta_predictions_shard_0045.tsv",
+     "format": "tsv"
+    }
+   ]
+  }
+ },
+ "recipe_search_module": "../third_party/recipeadqa/code/common/qa/constraint_search.py",
+ "private": {
+  "role_salt": "<ROLE_SALT>",
+  "knowledge_seed": "<KNOWLEDGE_SEED>",
+  "cohort_file": "<COHORT_FILE>"
+ },
+ "roles": {
+  "proportions": {
+   "auxiliary": 0.2,
+   "protected": 0.5,
+   "attack_reference": 0.1,
+   "attack_nonmember": 0.1,
+   "utility_reference": 0.1
+  }
+ },
+ "banks": {
+  "max_cores": 1024,
+  "core_lengths": [
+   1,
+   2,
+   3
+  ],
+  "public_seed": 20261022,
+  "rating_min_core_matches": 2,
+  "target_answers": 20,
+  "answer_upper": 25,
+  "answer_lower": {
+   "movie": 2,
+   "beauty": 2,
+   "recipe_text": 1
+  },
+  "max_options": 4,
+  "max_conditions": 10,
+  "random": {
+   "public_seed": 20261023,
+   "attempts_per_core": 256,
+   "max_extensions": 4
+  }
+ },
+ "test": {
+  "requests": 400,
+  "seed": 20261005
+ },
+ "cohorts": {
+  "members": 5000,
+  "test_nonmembers": 5000,
+  "calibration_nonmembers": 5000,
+  "reference_users": 5000,
+  "selection_seed": 1,
+  "known_ratings": 20,
+  "known_reviews": 5
+ },
+ "release": {
+  "experiment_id": "privacyqa",
+  "training_releases": 32,
+  "calibration_releases": 16,
+  "targets_per_class": 500,
+  "schedule_seed": 20261005,
+  "familywise_alpha": "1/20",
+  "measurements": 294
+ },
+ "attack": {
+  "seed": 20261005,
+  "classifier_C": 1,
+  "max_iterations": 500,
+  "tolerance": 1e-06
+ },
+ "attack_metrics": {
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261015,
+  "familywise_alpha": 0.05
+ },
+ "attack_audit": {
+  "prior_shape": 0.5,
+  "prior_rate": 0,
+  "grid_sd": 12,
+  "grid_laplace_scales": 12,
+  "placebo_split": "calibration",
+  "blind_folds": 5,
+  "blind_seed": 20261021
+ },
+ "mechanism_audit": {
+  "canary_units": [
+   1,
+   5,
+   20,
+   40
+  ],
+  "trials": {
+   "1": 200000,
+   "5": 200000,
+   "20": 1000000,
+   "40": 200000
+  },
+  "control_trials": 200000,
+  "chunk_trials": 10000,
+  "workers": 12,
+  "threshold_grid": 300
+ },
+ "qa": {
+  "seed": 20261014,
+  "development_requests": 40,
+  "candidates": 30,
+  "negative_reservoir": 2048,
+  "posting_sample": 128,
+  "model_path": "<QWEN3_1_7B>",
+  "training_token_budget": 2097152,
+  "max_steps": 4096,
+  "learning_rate": 0.0002,
+  "max_length": 32768,
+  "max_new_tokens": 1024,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "inference": {
+   "movie": {
+    "batch_size": 16,
+    "prompt_token_limit": 32768
+   },
+   "beauty": {
+    "batch_size": 8,
+    "prompt_token_limit": 32768
+   },
+   "recipe_text": {
+    "batch_size": 12,
+    "prompt_token_limit": 49152
+   }
+  },
+  "bootstrap_replicates": 2000,
+  "paired_comparisons": [
+   [
+    "DP",
+    "Non-private"
+   ],
+   [
+    "DP",
+    "Bounded-non-private"
+   ],
+   [
+    "Random-DP",
+    "Random-Non-private"
+   ],
+   [
+    "Random-DP",
+    "Random-Bounded-non-private"
+   ],
+   [
+    "DP",
+    "Random-DP"
+   ],
+   [
+    "Non-private",
+    "Random-Non-private"
+   ],
+   [
+    "DP",
+    "Public-only"
+   ],
+   [
+    "DP",
+    "Base"
+   ]
+  ]
+ },
+ "preference": {
+  "draws": 400,
+  "draw_seed": 20261022,
+  "variant_limit": 64,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261022
+ }
+}

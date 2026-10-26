@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "privacyqa"
+version = "1.0.0"
+description = "Multi-constraint recommendation QA data synthesized from user preference evidence under user-level differential privacy"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = [
+    "duckdb>=1.1",
+    "numpy>=2.0",
+    "opendp==0.15.1",
+    "pyarrow>=15",
+    "scikit-learn>=1.6",
+    "scipy>=1.13",
+]
+
+[project.optional-dependencies]
+qa = ["accelerate>=1.10", "peft>=0.17", "safetensors>=0.7", "tokenizers>=0.22", "torch>=2.8", "transformers>=4.57"]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]

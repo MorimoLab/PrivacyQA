@@ -1,0 +1,48 @@
+{
+ "schema_version": "596efe14b62d4917f67a4e49ca275335724cf259f7583c0a4ec5431af9062f5c",
+ "kb_version": "596efe14b62d4917f67a4e49ca275335724cf259f7583c0a4ec5431af9062f5c",
+ "genres": {
+  "Action": "action",
+  "Adventure": "adventure",
+  "Animation": "animation",
+  "Children": "children",
+  "Children's": "children",
+  "Comedy": "comedy",
+  "Crime": "crime",
+  "Documentary": "documentary",
+  "Drama": "drama",
+  "Fantasy": "fantasy",
+  "Film-Noir": "film-noir",
+  "Horror": "horror",
+  "Musical": "musical",
+  "Mystery": "mystery",
+  "Romance": "romance",
+  "IMAX": "imax",
+  "Sci-Fi": "sci-fi",
+  "Thriller": "thriller",
+  "War": "war",
+  "Western": "western"
+ },
+ "min_year": 1870,
+ "max_year": 2023,
+ "runtime_bins": [
+  [
+   "short",
+   90
+  ],
+  [
+   "medium",
+   120
+  ],
+  [
+   "long",
+   null
+  ]
+ ],
+ "top_languages": 10,
+ "top_origins": 10,
+ "unknown_languages": [
+  "xx",
+  "und"
+ ]
+}

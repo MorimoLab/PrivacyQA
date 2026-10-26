@@ -1,0 +1,9 @@
+# QA model environment of the reported runs (Python 3.9, CUDA GPUs): LoRA training and inference with Qwen3-1.7B.
+# scripts/run_models.py runs privacyqa.qa.train and privacyqa.qa.infer from src/ with this interpreter.
+torch==2.8.0
+transformers==4.57.1
+peft==0.17.1
+accelerate==1.10.1
+tokenizers==0.22.1
+safetensors==0.7.0
+numpy==2.0.2
