@@ -1,4 +1,4 @@
-# PrivacyQA
+# User-Level Differentially Private Synthesis of Question-Answering Data for Multi-Constraint Recommendation
 
 PrivacyQA synthesizes question-answering (QA) data for multi-constraint recommendation from user preference evidence, such as ratings and review-derived judgments, while protecting the users who contribute that evidence with user-level differential privacy (DP). This repository contains the implementation, the released datasets, and the aggregate results of the paper *User-Level Differentially Private Synthesis of Question-Answering Data for Multi-Constraint Recommendation*.
 
